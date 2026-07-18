@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="./../DemoECommerce.ProductApiSolution/ProductApi.Application/ProductApi.Application.csproj" />
+  <Project Path="./../DemoECommerce.ProductApiSolution/ProductApi.Domain/ProductApi.Domain.csproj" />
+  <Project Path="./../DemoECommerce.ProductApiSolution/ProductApi.Infrastructure/ProductApi.Infrastructure.csproj" />
+  <Project Path="./../DemoECommerce.ProductApiSolution/ProductApi.Presentation/ProductApi.Presentation.csproj" />
+  <Project Path="./../DemoECommerce.SharedLibrarySolution/eCommerce.ShareLibrary/eCommerce.ShareLibrary.csproj" />
+</Solution>
