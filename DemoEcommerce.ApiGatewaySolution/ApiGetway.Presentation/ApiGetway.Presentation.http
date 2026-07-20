@@ -1,0 +1,6 @@
+@ApiGetway.Presentation_HostAddress = http://localhost:5104
+
+GET {{ApiGetway.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

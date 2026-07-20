@@ -27,13 +27,17 @@ namespace eCommerce.ShareLibrary.DependencyInjection
                 rollingInterval: RollingInterval.Day)
                 .CreateLogger();
 
+            // Add JWT authentication Scheme
             JWTAuthenticationScheme.AddJWTAuthenticationScheme(services, config);
             return services;
         }
 
         public static IApplicationBuilder UseSharedPolicies(this IApplicationBuilder app)
         {
+            // Use global Exception
             app.UseMiddleware<GlobalException>();
+
+            // Register middleware to block all outsiders API calls
             app.UseMiddleware<ListenToOnlyApiGateway>();
 
             return app;
