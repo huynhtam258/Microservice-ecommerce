@@ -20,7 +20,7 @@ namespace ProductApi.Presentation.Controllers
             if (!products.Any())
                 return NotFound("No products detected in the database");
 
-            var (_, list) = ProductConversion.FromEntity(null!, products);
+            var (_, list) = ProductConversion.FromEntity(null, products);
             return list!.Any() ? Ok(list) : NotFound("No product found");
         }
 
@@ -31,7 +31,7 @@ namespace ProductApi.Presentation.Controllers
             if (product is null)
                 return NotFound("Product requested not found");
 
-            var (_product, _) = ProductConversion.FromEntity(product, null!);
+            var (_product, _) = ProductConversion.FromEntity(product, null);
             return _product is not null ? Ok(_product) : NotFound("Product not found");
         }
 
