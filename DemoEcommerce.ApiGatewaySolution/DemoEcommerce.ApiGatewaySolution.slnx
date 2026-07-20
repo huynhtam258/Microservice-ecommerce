@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="../DemoECommerce.SharedLibrarySolution/eCommerce.ShareLibrary/eCommerce.ShareLibrary.csproj" />
   <Project Path="ApiGetway.Presentation/ApiGetway.Presentation.csproj" />
 </Solution>
