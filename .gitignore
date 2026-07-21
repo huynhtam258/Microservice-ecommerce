@@ -232,3 +232,6 @@ iisexpress/
 # CODEX
 # =========================
 .codex
+
+*.text
+*.txt
